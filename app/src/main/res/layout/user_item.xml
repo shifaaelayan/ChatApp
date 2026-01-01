@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="15dp"
+    android:layout_margin="10dp"
+    android:elevation="8dp"
+    >
+
+    <ImageView
+        android:id="@+id/imgProfile"
+        android:paddingTop= "10dp"
+        android:paddingLeft="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/profile"/>
+
+    <LinearLayout
+        android:layout_width = "match_parent"
+        android:layout_height = "wrap_content"
+        android:orientation = "vertical"
+        android:padding="20dp"
+        >
+
+        <TextView
+            android:id="@+id/ContactName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="User Name"
+            android:textSize="8pt"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/ContactStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="this is the contact status"
+            android:textSize="8pt"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

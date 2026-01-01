@@ -5,7 +5,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:layout_height="match_parent"
-    tools:context=".activities.MainActivity"
+    tools:context=".activities.LoginActivity"
     android:gravity="center"
     android:padding="20dp"
 
@@ -21,25 +21,7 @@
         android:layout_marginBottom="20dp"
         />
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/TextInputNameLayout"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-        android:hint="User Name"
-        android:padding="10dp"
-        app:startIconDrawable="@drawable/ic_baseline_person_24"
-        app:endIconMode="clear_text"
-        >
-
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:inputType="text"/>
-
-    </com.google.android.material.textfield.TextInputLayout>
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/TextInputEmailLayout"
+        android:id="@+id/EmailLogin"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
@@ -58,30 +40,8 @@
     </com.google.android.material.textfield.TextInputLayout>
 
 
-
-
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/TextInputStatusLayout"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-        android:hint="Status"
-        app:startIconDrawable="@drawable/ic_nfo"
-        android:padding="10dp"
-        >
-
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:inputType="text"
-            android:maxLength="200"/>
-
-    </com.google.android.material.textfield.TextInputLayout>
-
-
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/TextInputPassword"
+        android:id="@+id/PasswordLogin"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
@@ -102,24 +62,38 @@
 
     </com.google.android.material.textfield.TextInputLayout>
 
+
+    <TextView
+        android:layout_width="289dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="-25dp"
+        android:text="Forget your password?"
+        android:textAlignment="textStart"
+        android:textStyle="bold" />
+
     <Button
-        android:layout_marginTop="@dimen/cardview_default_radius"
-        android:id="@+id/signUpBtn"
+        android:id="@+id/signInBtn"
         android:layout_width="343dp"
         android:layout_height="wrap_content"
-        android:text="Sign Up"
+        android:layout_marginTop="@dimen/cardview_default_radius"
+        android:text="Login"
         android:textAllCaps="false"
 
         android:backgroundTint="@color/teal_200"
         />
 
+
     <TextView
-        android:id="@+id/signInActivity"
-        android:padding="25dp"
+        android:id="@+id/signUpActivity"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="15sp"
         android:fontFamily="sans-serif-medium"
-        android:text="@string/signIn"/>
+        android:padding="25dp"
+        android:text="@string/my_string_value"
+        android:textSize="15sp"
+
+       android:layout_marginRight="-15dp"
+        />
+
 
 </LinearLayout>
