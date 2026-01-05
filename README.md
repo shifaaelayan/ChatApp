@@ -1,3 +1,10 @@
-− Developed a real-time chat app using Firebase Authentication and Realtime Database.
+# ChatApp
 
-− Implemented user registration/login, profile management, and messaging features.
+Android Application.
+
+## Features
+
+- Developed a real-time chat app using Firebase Authentication and Realtime Database.
+- Implemented user registration and login functionality.
+- Enabled profile management for users.
+- Supported real-time messaging between users.
